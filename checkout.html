@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Confirm Purchase!</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Get expertise of planting trees and plants">
+        <meta name="keywords" content="Plant, Planting, Green, Greenery, trees, tree, home, greenery/home">
+        <meta name="author" content="Rakim Sadman Ahmed">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+        <link rel="icon" type="images/x-icon" href="images/favicon.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="small-cont">
+                <div class="navbar">
+                    <div class="logoC">
+                        <img src="images/logo.png" class="logo" width="200px">
+                    </div>
+                    <nav class="links">
+                        <ul id="MenuItems">
+                            <li><a href="home">Home</a></li>
+                            <li><a href="plants">Plants</a></li>
+                            <li><a href="about">About</a></li>
+                            <li class="last-m"><a href="contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menuC">
+                        <img src="images/menu.png" class="menu-icon" id="menubtn" alt="Menu-icon" onclick="onmenu()">
+                    </div>
+                </div>
+            </div>
+            <form class="user-inpC" id="purchaseForm">
+                <div class="small-cont">
+                    <h1 class="khe1">User Information</h1>
+                    <div class="user-inp-grp">
+                        <label for="name" class="user-label">Name:</label>
+                        <input type="text" placeholder="Name" class="user-inp" name="name" id="inp1">
+                    </div>
+                    <div class="user-inp-grp">
+                        <label for="email" class="user-label">Email: <span class="req">*</span></label>
+                        <input type="email" placeholder="Email *" class="user-inp" name="email" id="inp2" required>
+                    </div>
+                    <div class="user-inp-grp">
+                        <label for="num" class="user-label">Phone: <span class="req">*</span></label>
+                        <input type="number" placeholder="Number *" class="user-inp" name="num" id="inp3" required>
+                    </div>
+                </div>
+                <div class="small-cont">
+                    <div class="row">
+                        <div class="col-3 c3f">
+                            <div class="payC" id="pa">
+                                <div class="crow">
+                                    <img src="images/paypal.jpg" alt="paypal icon" class="pay-met">
+                                    <h1 class="pay-name">Paypal</h1>
+                                </div>
+                                <p class="pay-des">PayPal is an online payment platform that allows users to send and receive money securely. It supports online shopping, peer-to-peer transfers, and business transactions, offering buyer protection and easy integration with banks and cards. PayPal is widely accepted by e-commerce sites and global merchants.</p>
+                            </div>
+                        </div>
+                        <div class="col-3 c3m">
+                            <div class="payC" id="ma">
+                                <div class="crow">
+                                    <img src="images/master.jpg" alt="Mastercard icon" class="pay-met">
+                                    <h1 class="pay-name">Mastercard</h1>
+                                </div>
+                                <p class="pay-des">Mastercard is a global payment network that facilitates electronic transactions, enabling users to make secure payments using debit, credit, and prepaid cards. Accepted by millions of merchants worldwide, Mastercard ensures fast, reliable, and convenient access to funds for both online and in-store purchases.</p>
+                            </div>
+                        </div>
+                        <div class="col-3 c3l">
+                            <div class="payC" id="pc">
+                                <div class="crow">
+                                    <img src="images/aft-cou.jpg" alt="on course icon" class="pay-met aft-cou">
+                                    <h1 class="pay-name">Pay on Course</h1>
+                                </div>
+                                <p class="pay-des">"Pay on Course" is a flexible payment option by Greenery™. Customers can start benefiting from Greenery's plant expertise services and products immediately, paying only after receiving and starting the course. It offers convenience and allows customers to confidently explore the service without upfront costs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-cont">
+                    <h1 class="khe1">Customer Location</h1>
+                    <div class="user-inp-grp">
+                        <label for="st" class="user-label">State: <span class="req">*</span></label>
+                        <input type="text" placeholder="State *" class="user-inp" name="name" id="inp4" required>
+                    </div>
+                    <div class="user-inp-grp">
+                        <label for="ci" class="user-label">City: <span class="req">*</span></label>
+                        <input type="text" placeholder="City *" class="user-inp" name="email" id="inp5" required>
+                    </div>
+                    <div class="user-inp-grp">
+                        <label for="ci" class="user-label">Location: <span class="req">*</span></label>
+                        <input type="text" placeholder="Location *" class="user-inp" name="num" id="inp6" required>
+                    </div>
+                </div>
+                <div class="small-cont">
+                    <h1 class="khe2">Special message <span class="opt">(optional)</span></h1>
+                    <textarea class="spe-msg" id="speMsg" rows="3" placeholder="e.g: I want my pot colour to be black"></textarea>
+                </div>
+                
+                <div class="small-cont">
+                    <div class="cau-cont">
+                        <i class="fa-solid fa-align-justify ct caui"></i>
+                        <p class="cau">
+                            By submitting your information, you affirm that all details provided are accurate and truthful. Should any issues arise due to incorrect or misleading information, Greenery<sup class="tm">TM</sup> will not be held liable for any consequences resulting from such discrepancies.
+                        </p>
+                    </div>
+                    <div class="cau-cont">
+                        <i class="fa-solid fa-align-justify ct caui"></i>
+                        <p class="cau">
+                            In the 'Location' field, please make sure to enter the precise address where you would like our experts to visit. It is important that this information is accurate to ensure timely service. If a false address is submitted intentionally as a prank, we reserve the right to take appropriate actions to prevent such misuse.
+                        </p>
+                    </div>
+                    <div class="cau-cont">
+                        <i class="fa-solid fa-align-justify ct caui"></i>
+                        <p class="cau">
+                            You may cancel the course one time, but this must be done within 3 days of receiving our confirmation email. If the cancellation is requested after this period, a non-refundable fee of $20.00 will be charged to cover administrative costs associated with the cancellation.
+                        </p>
+                    </div>
+                    <div class="cau-cont">
+                        <i class="fa-solid fa-align-justify ct caui"></i>
+                        <p class="cau">
+                            All fields marked with a star icon (<span class="req">*</span>) are mandatory and must be filled out. These fields are crucial for processing your submission, and the form cannot be submitted if any of them are incomplete.
+                        </p>
+                    </div>
+                </div>
+                <div class="small-cont">
+                    <div class="sub-cont">
+                        <button class="submit" id="submitBtn" type="button">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="small-cont">
+                <div class="footer-cont">
+                        <div class="row">
+                        <div class="footer1">
+                            <div class="f-flex">
+                                <img src="images/logo-w.png" alt="greenery logo" class="logo-w">
+                                <p class="goal">
+                                    greenery<sup class="tm">TM</sup> always dreamed to save
+                                    the world from the harms way. So that
+                                    the next generation could appreciate
+                                    living in this thriving and lush world.
+                                    We always wanted to inspire people on
+                                    taking care of this beautifulplace that 
+                                    we've been blessed by.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="f-flex">
+                                <h4 class="download textW">Menu links</h4>
+                                <ul>
+                                    <li class="foot-links textW"><a href="home">Home</a></li>
+                                    <li class="foot-links textW"><a href="contact">Contact</a></li>
+                                    <li class="foot-links textW"><a href="about">About</a></li>
+                                    <li class="foot-links textW"><a href="plants">Plants</a></li>
+                                </ul>
+                            </div>
+                        </div>       
+                        <div class="footer3">
+                            <div class="f-flex">
+                                <h4 class="download textW">Follow us on</h4>
+                                <ul>
+                                    <li class="foot-links textW"><a href="https://www.facebook.com">Facebook</a></li>
+                                    <li class="foot-links textW"><a href="https://www.youtube.com">Youtube</a></li>
+                                    <li class="foot-links textW"><a href="https://www.x.com">Twitter</a></li>
+                                    <li class="foot-links textW"><a href="https://www.instagram.com">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-hro">
+                    <div class="rowb">
+                        <p class="copyright">Copyright 2024 &copy; WEBolutionCo - All rights reserved</p>
+                        <div class="braf">
+                            <i class="fa-brands fa-facebook textg bra" onclick="window.location.href='https://www.facebook.com';"></i>
+                            <i class="fa-brands fa-instagram textg bra" onclick="window.location.href='https://www.instagram.com';"></i>
+                            <i class="fa-brands fa-twitter textg bra" onclick="window.location.href='https://www.x.com';"></i>
+                            <i class="fa-brands fa-youtube textg bra" onclick="window.location.href='https://www.youtube.com';"></i>
+                            <i class="fa-brands fa-github textg bra" onclick="window.location.href='https://www.github.com/webolutionco';"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script src="check.js"></script>
+    </body>
+</html>

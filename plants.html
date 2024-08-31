@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grow a plant today!</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Get expertise of planting trees and plants">
+        <meta name="keywords" content="Plant, Planting, Green, Greenery, trees, tree, home, greenery/home">
+        <meta name="author" content="Rakim Sadman Ahmed">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="images/x-icon" href="images/favicon.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="small-cont">
+                <div class="navbar">
+                    <div class="logoC">
+                        <img src="images/logo.png" class="logo" width="200px">
+                    </div>
+                    <nav class="links">
+                        <ul id="MenuItems">
+                            <li><a href="home">Home</a></li>
+                            <li><a href="plants">Plants</a></li>
+                            <li><a href="about">About</a></li>
+                            <li class="last-m"><a href="contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menuC">
+                        <img src="images/menu.png" class="menu-icon" id="menubtn" alt="Menu-icon" onclick="onmenu()">
+                    </div>
+                </div>
+            </div>
+            <div class="small-cont">
+                <div class="selection">
+                    <div class="she-cont">
+                        <h1 class="she">
+                            Filter plant Selection
+                        </h1>
+                        
+                    </div>
+                    <div class="sele-cont">
+                        <ul>
+                            <li class="select" id="npf">No filter</li>
+                            <li class="select" id="apf">All plants</li>
+                            <li class="select" id="tpf">Top plants</li>
+                            <li class="select" id="ppf">Most planted plants</li>
+                            <li class="select" id="rpf">Most Rated plants</li>
+                            <li class="select last-m" id="upf">Most Using plants</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <main id="allPlants">
+                <div class="small-cont">
+                    <div class="top-cont">
+                        <h1 class="he2">All Plant Courses <span class="ct">&rarr;</span></h1>
+                        <div class="row">
+                            <div class="col-3 c3f">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/aloe-vera';">
+                                    <img src="images/aloe.jpg" alt="Aloe vera plant" class="top-pic">
+                                    <h1 class="pname">Aloe Vera</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="price ct">
+                                            $199.99 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">345</span> Planted <br>
+                                            <span class="ct">5.0</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">96%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3m">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/spinach';">
+                                    <img src="images/spina.png" alt="Spinach plant" class="top-pic">
+                                    <h1 class="pname">Spinach</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="price ct">
+                                            $199.99 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">273</span> Planted <br>
+                                            <span class="ct">4.7</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">96%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3l">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/basil';">
+                                    <img src="images/basil.jpg" alt="basil plant" class="top-pic">
+                                    <h1 class="pname">Basil</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="price ct">
+                                            $199.99 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">145</span> Planted <br>
+                                            <span class="ct">4.3</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">92%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3f">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/mint';">
+                                    <img src="images/mint.jpg" alt="mint plant" class="top-pic">
+                                    <h1 class="pname">Mint</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="price ct">
+                                            $199.99
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">299</span> Planted <br>
+                                            <span class="ct">4.6</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">97%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3m">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/snake-plant';">
+                                    <img src="images/snake.jpg" alt="snake plant" class="top-pic">
+                                    <h1 class="pname">Snake Plant</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="price ct">
+                                            $199.99
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">205</span> Planted <br>
+                                            <span class="ct">3.9</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">59%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3l">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/lavender';">
+                                    <img src="images/laven.jpg" alt="lavender plant" class="top-pic">
+                                    <h1 class="pname">Lavender</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="price ct">
+                                            $199.99
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">83</span> Planted <br>
+                                            <span class="ct">4.9</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">98%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3f">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/chilli';">
+                                    <img src="images/chili.jpg" alt="chilli plant" class="top-pic">
+                                    <h1 class="pname">Chilli</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="price ct">
+                                            $199.99
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">203</span> Planted <br>
+                                            <span class="ct">3.2</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">62%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3m">
+                                <div class="col-3C c3p">
+                                    <img src="images/plus.png" alt="Plus sign" class="top-pic plus">
+                                    <h1 class="pname">Coming soon</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="price ct">
+                                            $???
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">?</span> Planted <br>
+                                            <span class="ct">?</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">?</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <section id="topPlants">
+                <div class="small-cont">
+                    <div class="top-cont">
+                        <h1 class="he2">Top Chosen Plants <span class="ct">&rarr;</span></h1>
+                        <div class="row">
+                            <div class="col-3 c3f">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/aloe-vera';">
+                                    <img src="images/aloe.jpg" alt="Aloe vera plant" class="top-pic">
+                                    <h1 class="pname">Aloe Vera</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #1 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">345</span> Planted <br>
+                                            <span class="ct">5.0</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">96%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3m">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/spinach';">
+                                    <img src="images/spina.png" alt="Spinach plant" class="top-pic">
+                                    <h1 class="pname">Spinach</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #2 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">273</span> Planted <br>
+                                            <span class="ct">4.7</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">96%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3l">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/mint';">
+                                    <img src="images/mint.jpg" alt="mint plant" class="top-pic">
+                                    <h1 class="pname">Mint</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #3
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">299</span> Planted <br>
+                                            <span class="ct">4.6</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">97%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="plantedPlants">
+                <div class="small-cont">
+                    <div class="top-cont">
+                        <h1 class="he2">Most Planted Plants <span class="ct">&rarr;</span></h1>
+                        <div class="row">
+                            <div class="col-3 c3f">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/aloe-vera';">
+                                    <img src="images/aloe.jpg" alt="Aloe vera plant" class="top-pic">
+                                    <h1 class="pname">Aloe Vera</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #1 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">345</span> Planted
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3m">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/mint';">
+                                    <img src="images/mint.jpg" alt="Mint plant" class="top-pic">
+                                    <h1 class="pname">Mint</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #2
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">299</span> Planted
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3l">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/spinach';">
+                                    <img src="images/spina.png" alt="Spinach plant" class="top-pic">
+                                    <h1 class="pname">Spinach</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #3 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">273</span> Planted <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="ratedPlants">
+                <div class="small-cont">
+                    <div class="top-cont">
+                        <h1 class="he2">Most Rated Plants <span class="ct">&rarr;</span></h1>
+                        <div class="row">
+                            <div class="col-3 c3f">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/aloe-vera';">
+                                    <img src="images/aloe.jpg" alt="Aloe vera plant" class="top-pic">
+                                    <h1 class="pname">Aloe Vera</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #1 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">5.0</span> <i class="fa-solid fa-star ct"></i> rating
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3m">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/lavender';">
+                                    <img src="images/laven.jpg" alt="Lavender plant" class="top-pic">
+                                    <h1 class="pname">Lavender</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #2
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">4.9</span> <i class="fa-solid fa-star ct"></i> rating
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3l">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/spinach';">
+                                    <img src="images/spina.png" alt="Spinach plant" class="top-pic">
+                                    <h1 class="pname">Spinach</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #3 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">4.7</span> <i class="fa-solid fa-star ct"></i> rating
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="usingPlants">
+                <div class="small-cont">
+                    <div class="top-cont">
+                        <h1 class="he2">Most still using Plants <span class="ct">&rarr;</span></h1>
+                        <div class="row">
+                            <div class="col-3 c3f">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/lavender';">
+                                    <img src="images/laven.jpg" alt="Lavender plant" class="top-pic">
+                                    <h1 class="pname">Lavender</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #1 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">98%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3m">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/mint';">
+                                    <img src="images/mint.jpg" alt="Mint plant" class="top-pic">
+                                    <h1 class="pname">Mint</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #2 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">97%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3l">
+                                <div class="col-3C c3p" onclick="window.location.href='plants/mint';">
+                                    <img src="images/aloe.jpg" alt="Aloe vera plant" class="top-pic">
+                                    <h1 class="pname">Aloe Vera</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #3
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">96%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="small-cont">
+                <div class="footer-cont">
+                        <div class="row">
+                        <div class="footer1">
+                            <div class="f-flex">
+                                <img src="images/logo-w.png" alt="greenery logo" class="logo-w">
+                                <p class="goal">
+                                    greenery™ always dreamed to save
+                                    the world from the harms way. So that
+                                    the next generation could appreciate
+                                    living in this thriving and lush world.
+                                    We always wanted to inspire people on
+                                    taking care of this beautifulplace that 
+                                    we've been blessed by.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="f-flex">
+                                <h4 class="download textW">Menu links</h4>
+                                <ul>
+                                    <li class="foot-links textW"><a href="home">Home</a></li>
+                                    <li class="foot-links textW"><a href="contact">Contact</a></li>
+                                    <li class="foot-links textW"><a href="about">About</a></li>
+                                    <li class="foot-links textW"><a href="plants">Plants</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer3">
+                            <div class="f-flex">
+                                <h4 class="download textW">Follow us on</h4>
+                                <ul>
+                                    <li class="foot-links textW"><a href="https://www.facebook.com">Facebook</a></li>
+                                    <li class="foot-links textW"><a href="https://www.youtube.com">Youtube</a></li>
+                                    <li class="foot-links textW"><a href="https://www.x.com">Twitter</a></li>
+                                    <li class="foot-links textW"><a href="https://www.instagram.com">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-hro">
+                    <div class="rowb">
+                        <p class="copyright">Copyright 2024 &copy; WEBolutionCo - All rights reserved</p>
+                        <div class="braf">
+                            <i class="fa-brands fa-facebook textg bra" onclick="window.location.href='https://www.facebook.com';"></i>
+                            <i class="fa-brands fa-instagram textg bra" onclick="window.location.href='https://www.instagram.com';"></i>
+                            <i class="fa-brands fa-twitter textg bra" onclick="window.location.href='https://www.x.com';"></i>
+                            <i class="fa-brands fa-youtube textg bra" onclick="window.location.href='https://www.youtube.com';"></i>
+                            <i class="fa-brands fa-github textg bra" onclick="window.location.href='https://www.github.com/webolutionco';"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script src="plants.js"></script>
+    </body>
+</html>
