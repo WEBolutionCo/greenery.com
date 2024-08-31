@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Get Expert Guidance</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Get expertise of planting trees and plants">
+        <meta name="keywords" content="Plant, Planting, Green, Greenery, trees, tree, home, greenery/home">
+        <meta name="author" content="Rakim Sadman Ahmed">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="../images/x-icon" href="../images/favicon.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="small-cont">
+                <div class="navbar">
+                    <div class="logoC">
+                        <img src="../images/logo.png" class="logo" width="200px">
+                    </div>
+                    <nav class="links">
+                        <ul id="MenuItems">
+                            <li><a href="../home">Home</a></li>
+                            <li><a href="../plants">Plants</a></li>
+                            <li><a href="../about">About</a></li>
+                            <li class="last-m"><a href="../contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menuC">
+                        <img src="../images/menu.png" class="menu-icon" id="menubtn" alt="Menu-icon" onclick="onmenu()">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-cont">
+                <div class="small-cont">
+                    <div class="row">
+                        <div class="pcol-1">
+                            <div class="main-picC">
+                                <img src="../images/chili.jpg" alt="Chilli plant" class="main-pic" id="mainPic">
+                            </div>
+                            
+                            <div class="sm-pic-cont">
+                                <div class="sm-picC">
+                                    <img src="../images/chili.jpg" alt="Chilli plant" class="sm-pic sm-pic1" id="smPic1" onclick="changePic1('../images/chili.jpg')">
+                                </div>
+                                <div class="sm-picC">
+                                    <img src="../images/chili2.jpg" alt="Chilli plant" class="sm-pic" id="smPic2" onclick="changePic2('../images/chili2.jpg')">
+                                </div>
+                                <div class="sm-picC">
+                                    <img src="../images/chili3.jpg" alt="Chilli plant" class="sm-pic" id="smPic3" onclick="changePic3('../images/chili3.jpg')">
+                                </div>
+                                <div class="sm-picC">
+                                    <img src="../images/chili4.jpg" alt="Chilli plant" class="sm-pic" id="smPic4" onclick="changePic4('../images/chili4.jpg')">
+                                </div>
+                                <div class="sm-picC">
+                                    <img src="../images/chili5.jpg" alt="Chilli plant" class="sm-pic sm-pic5" id="smPic5" onclick="changePic5('../images/chili5.jpg')">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcol-2">
+                            <p class="plocation">
+                                Plants / Chilli
+                            </p>
+                            <h1 class="phe1">
+                                Chilli
+                            </h1>
+                            <h4 class="pprice" id="pprice">$199.99</h4>
+                            <div class="drow">
+                                <div class="du-cont" id="duCont1" onclick="duChange1('$199.99')">
+                                    <h1 class="duhe">6 Months - <span class="duprice" id="duPrice1">$199.99</span></h1>
+                                    
+                                    <p class="du-des">
+                                        reccomended if you <span class="mb-hide">already</span>
+                                        have some knowledge on planting.
+                                    </p>
+                                </div>
+                                <div class="du-cont" id="duCont2" onclick="duChange2('$349.99')">
+                                    <h1 class="duhe">1 year - <span class="duprice" id="duPrice2">$349.99</span></h1>
+                                    
+                                    <p class="du-des">
+                                        reccomended if you are 
+                                        completely new to planting.
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="cta" onclick="window.location.href='../checkout';">Buy Course &rarr;</button>
+                            <h1 class="phe2">Plant details <i class="fa-solid fa-indent ct"></i></h1>
+                            <p class="p-des">
+                               Chilli plants are vibrant and easy to grow, producing spicy peppers that add heat to dishes. They thrive in warm, sunny spots with well-drained soil. Available in various sizes and heat levels, chillies are perfect for spicing up your cooking. With their colorful fruits and compact size, chilli plants are a great addition to any garden or kitchen.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="topPlants">
+                <div class="small-cont">
+                    <div class="top-cont">
+                        <h1 class="he2">Top Chosen Plants <span class="ct">&rarr;</span></h1>
+                        <div class="row">
+                            <div class="col-3 c3f">
+                                <div class="col-3C c3p" onclick="window.location.href='aloe-vera';">
+                                    <img src="../images/aloe.jpg" alt="Aloe Vera plant" class="top-pic">
+                                    <h1 class="pname">Aloe vera</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #1 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">345</span> Planted <br>
+                                            <span class="ct">5.0</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">96%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3m">
+                                <div class="col-3C c3p" onclick="window.location.href='spinach';">
+                                    <img src="../images/spina.png" alt="Spinach plant" class="top-pic">
+                                    <h1 class="pname">Spinach</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #2 
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">273</span> Planted <br>
+                                            <span class="ct">4.7</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">96%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 c3l">
+                                <div class="col-3C c3p" onclick="window.location.href='mint';">
+                                    <img src="../images/mint.jpg" alt="mint plant" class="top-pic">
+                                    <h1 class="pname">Mint</h1>
+                                    <div class="rowb prow">
+                                        <h1 class="posi ct">
+                                            #3
+                                        </h1>
+                                        <p class="data">
+                                            <span class="ct">299</span> Planted <br>
+                                            <span class="ct">4.6</span> <i class="fa-solid fa-star ct"></i> rating <br>
+                                            <span class="ct">97%</span> Still using
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="small-cont">
+                <div class="footer-cont">
+                        <div class="row">
+                        <div class="footer1">
+                            <div class="f-flex">
+                                <img src="../images/logo-w.png" alt="greenery logo" class="logo-w">
+                                <p class="goal">
+                                    greenery<sup class="tm">TM</sup> always dreamed to save
+                                    the world from the harms way. So that
+                                    the next generation could appreciate
+                                    living in this thriving and lush world.
+                                    We always wanted to inspire people on
+                                    taking care of this beautifulplace that 
+                                    we've been blessed by.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer2">
+                            <div class="f-flex">
+                                <h4 class="download textW">Menu links</h4>
+                                <ul>
+                                    <li class="foot-links textW"><a href="../home">Home</a></li>
+                                    <li class="foot-links textW"><a href="../contact">Contact</a></li>
+                                    <li class="foot-links textW"><a href="../about">About</a></li>
+                                    <li class="foot-links textW"><a href="../plants">Plants</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer3">
+                            <div class="f-flex">
+                                <h4 class="download textW">Follow us on</h4>
+                                <ul>
+                                    <li class="foot-links textW"><a href="https://www.facebook.com">Facebook</a></li>
+                                    <li class="foot-links textW"><a href="https://www.youtube.com">Youtube</a></li>
+                                    <li class="foot-links textW"><a href="https://www.x.com">Twitter</a></li>
+                                    <li class="foot-links textW"><a href="https://www.instagram.com">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-hro">
+                    <div class="rowb">
+                        <p class="copyright">Copyright 2024 &copy; WEBolutionCo - All rights reserved</p>
+                        <div class="braf">
+                            <i class="fa-brands fa-facebook textg bra" onclick="window.location.href='../https://www.facebook.com';"></i>
+                            <i class="fa-brands fa-instagram textg bra" onclick="window.location.href='../https://www.instagram.com';"></i>
+                            <i class="fa-brands fa-twitter textg bra" onclick="window.location.href='../https://www.x.com';"></i>
+                            <i class="fa-brands fa-youtube textg bra" onclick="window.location.href='../https://www.youtube.com';"></i>
+                            <i class="fa-brands fa-github textg bra" onclick="window.location.href='../https://www.github.com/webolutionco';"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../script.js"></script>
+        <script src="product.js"></script>
+    </body>
+</html>
