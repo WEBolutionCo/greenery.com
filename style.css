@@ -1306,7 +1306,7 @@ f-flex {
     }
     
     .col-4 {
-        max-height: 515px;
+        max-height: 520px;
     }
     
     .col-4:hover {
@@ -1322,6 +1322,16 @@ f-flex {
         padding: 15px;
         border-radius: 20px;
         margin-bottom: 0;
+    }
+    
+    .hero-bg {
+        bottom: 3px;
+        left: 3px;
+    }
+    
+    .hero-bg1 {
+        top: 6px;
+        right: 6px;
     }
     
     .hero-bg:hover {
